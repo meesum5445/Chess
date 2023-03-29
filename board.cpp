@@ -33,20 +33,20 @@ void board::init(chess* C)
     for (int i = 0; i < 8; i++)
         this->Piece[i] = new piece * [8] {};
     //...............................   
-   //this->Piece[0][0] = new rook(this->C->P[0], this);
-   // this->Piece[0][1] = new knight(this->C->P[0], this);
-    //this->Piece[0][2] = new bishop(this->C->P[0], this);
-    //this->Piece[0][3] = new king(this->C->P[0], this);
-    //this->Piece[0][4] = new queen(this->C->P[0], this);
-    /*this->Piece[0][5] = new bishop(this->C->P[0], this);
+   this->Piece[0][0] = new rook(this->C->P[0], this);
+    this->Piece[0][1] = new knight(this->C->P[0], this);
+    this->Piece[0][2] = new bishop(this->C->P[0], this);
+    this->Piece[0][3] = new king(this->C->P[0], this);
+    this->Piece[0][4] = new queen(this->C->P[0], this);
+    this->Piece[0][5] = new bishop(this->C->P[0], this);
     this->Piece[0][6] = new knight(this->C->P[0], this);
     this->Piece[0][7] = new rook(this->C->P[0], this);
     for (int i = 0; i < 8; i++)
     {
         this->Piece[1][i] = new pawn(this->C->P[0], this);
-    }*/
+    }
     ////..............................
-   /* for (int i = 0; i < 8; i++)
+   for (int i = 0; i < 8; i++)
     {
         this->Piece[6][i] = new pawn(this->C->P[1], this);
     }
@@ -57,16 +57,8 @@ void board::init(chess* C)
     this->Piece[7][4] = new queen(this->C->P[1], this);
     this->Piece[7][5] = new bishop(this->C->P[1], this);
     this->Piece[7][6] = new knight(this->C->P[1], this);
-    this->Piece[7][7] = new rook(this->C->P[1], this);*/
+    this->Piece[7][7] = new rook(this->C->P[1], this);
     //................
-    this->Piece[0][3] = new king(this->C->P[0], this);
-    this->Piece[7][3] = new rook(this->C->P[1], this);
-    this->Piece[7][4] = new rook(this->C->P[1], this);
-    this->Piece[6][1] = new rook(this->C->P[1], this);
-   // this->Piece[1][3] = new bishop(this->C->P[0], this);
-    //this->Piece[1][1] = new pawn(this->C->P[1], this);
-    this->Piece[7][7] = new king(this->C->P[1], this);
-   
 }
 void board::print()
 {
